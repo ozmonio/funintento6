@@ -1,0 +1,30 @@
+<html>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <h1>utilizando Foundation</h1>
+
+  <body>
+
+      <div class="row">
+        <div class="small-12 column">
+            <table role="grid">
+
+              <%@animal.each do |i|%>
+              <tr>
+                  <td><%=i.id%></td>
+                  <td><%=i.tipo%></td>
+                  <td><%=i.color%></td>
+              </tr>
+              <%end%>
+            </table>
+          </div>
+      </div>
+
+      <a href="#" class="button [tiny small large]">Tiny Button</a>
+<!-- Color Classes -->
+<a href="#" class="button [secondary success alert]">Alert Button</a>
+<!-- Radius Classes -->
+<a href="#" class="button [radius round]">Radius Button</a>
+<!-- Disabled Class -->
+<a href="#" class="button disabled">Disabled Button</a>
+<!-- Expand Class -->
